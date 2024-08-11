@@ -1,4 +1,4 @@
-package models;
+package com.xmen.xmenreviewapp.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,10 +16,9 @@ import java.util.Date;
 public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
     private String title;
     private String content;
-    private Date createdAt;
 
 
 }

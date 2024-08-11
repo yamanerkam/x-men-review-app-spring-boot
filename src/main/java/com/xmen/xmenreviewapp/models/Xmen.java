@@ -1,4 +1,4 @@
-package models;
+package com.xmen.xmenreviewapp.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 public class Xmen {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private String currentLocation;
     private int health;
